@@ -6,13 +6,14 @@
   <meta name="description" content="PocoPet(포코펫) — Android 오버레이 펫 앱. 개인정보처리방침·계정 삭제 안내." />
   <meta name="color-scheme" content="light dark" />
   <title>PocoPet — 포코펫</title>
+  <link rel="icon" href="assets/app-icon.png" type="image/png" />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="index.html">
-        <span class="brand__icon" aria-hidden="true">🐾</span>
+        <img class="brand__logo" src="assets/app-icon.png" width="36" height="36" alt="" />
         <span>PocoPet <span class="muted" style="font-weight:500">포코펫</span></span>
       </a>
       <nav class="site-nav" aria-label="주요 메뉴">
@@ -25,6 +26,11 @@
 
   <main class="site-main">
     <section class="hero">
+      <div class="hero-stage" aria-hidden="true">
+        <img class="hero-stage__pet hero-stage__pet--left" src="assets/images/pet-dog-yellow.png" alt="" />
+        <img class="hero-stage__app" src="assets/app-icon.png" alt="PocoPet 앱 아이콘" />
+        <img class="hero-stage__pet hero-stage__pet--right" src="assets/images/pet-cat-shorthair.png" alt="" />
+      </div>
       <span class="hero__badge">Android · 오버레이 펫</span>
       <h1>화면 위를 돌아다니는<br />힐링 비서 펫</h1>
       <p class="hero__sub">
@@ -32,31 +38,39 @@
         PocoPet이 가볍게 돕습니다.
         <span class="hero__sub-en">Floating overlay pet for light chat and device helpers.</span>
       </p>
+      <ul class="feature-strip">
+        <li>💬 펫 톤 대화</li>
+        <li>🐾 오버레이 캐릭터</li>
+        <li>🔔 예약 알림</li>
+        <li>📱 10종 펫</li>
+      </ul>
     </section>
 
-    <div class="panel panel--soft">
-      <span class="panel__label">About</span>
+    <div class="panel panel--soft panel--glass">
+      <span class="panel__label">About PocoPet</span>
       <p style="margin:0;color:var(--text-secondary)">
-        PocoPet은 휴대폰 화면 위에 떠 있는 캐릭터입니다.
-        이 사이트는 Google Play 등록을 위한 <strong>공개 정책 페이지</strong>를 제공합니다.
+        휴대폰 화면 위에 떠 있는 캐릭터와 함께하는 Android 앱입니다.
+        이 사이트는 Google Play 등록용 <strong>공개 정책·지원 안내</strong>를 제공합니다.
       </p>
     </div>
 
-    <h2 style="margin-top:2rem;border:none;padding:0;font-size:1rem">정책 · 안내</h2>
+    <h2 style="margin-top:2rem;border:none;padding:0;font-size:1rem;color:var(--text)">정책 · 안내</h2>
     <div class="card-grid">
-      <a class="card card--link" href="legal/privacy-policy.html">
+      <a class="card card--link card--policy" href="legal/privacy-policy.html">
+        <img class="card__thumb" src="assets/images/pet-rabbit.png" alt="" />
         <p class="card__title">개인정보처리방침</p>
         <p class="card__desc">수집·이용·보관·제3자 제공 및 권한 안내</p>
         <p class="card__arrow">자세히 보기 →</p>
       </a>
-      <a class="card card--link" href="legal/account-deletion.html">
+      <a class="card card--link card--delete" href="legal/account-deletion.html">
+        <img class="card__thumb" src="assets/images/pet-panda.png" alt="" />
         <p class="card__title">계정 및 데이터 삭제</p>
         <p class="card__desc">앱 내 탈퇴 절차, 이메일 요청, 보관 데이터</p>
         <p class="card__arrow">자세히 보기 →</p>
       </a>
     </div>
 
-    <div class="panel">
+    <div class="panel panel--glass">
       <span class="panel__label">Contact</span>
       <p class="contact-line" style="margin:0">
         <span>문의 이메일</span>
