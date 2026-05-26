@@ -2,12 +2,27 @@
 
 **앱 소스(`MobilePet`)는 Private** — 이 폴더만 **Public** 저장소로 올려 Play·Search Console용 URL을 씁니다.
 
-## 배포 (5분)
+## 배포 상태
 
-1. GitHub에서 **새 Public 저장소** 생성 (이름 예: `pocopet-site`)
-2. 이 폴더 **안의 파일만** 저장소 루트에 push (`index.html`, `legal/`, `.nojekyll`)
-3. **Settings → Pages** → Source: **Deploy from a branch** → Branch `main` → Folder **`/ (root)`**
-4. 몇 분 후 접속: `https://nyhoon.github.io/pocopet-site/`
+- 원격: https://github.com/nyhoon/pocopet-site
+- 로컬 push: `MobilePet` 루트에서 `.\scripts\deploy\push_pocopet_site.ps1`
+
+## Pages 설정 (한 번만)
+
+[Settings → Pages](https://github.com/nyhoon/pocopet-site/settings/pages)
+
+| 항목 | 값 |
+|------|-----|
+| Source | **Deploy from a branch** |
+| Branch | **main** |
+| Folder | **`/ (root)`** |
+
+저장 후 1~3분 뒤: https://nyhoon.github.io/pocopet-site/
+
+## 처음 올릴 때 (새 PC)
+
+1. 이 폴더에서 `git clone` 하거나 `MobilePet` 안의 `pocopet-site/` 사용
+2. `.\scripts\deploy\push_pocopet_site.ps1` (경로는 `MobilePet` 루트 기준)
 
 ## Play Console · Search Console URL
 
