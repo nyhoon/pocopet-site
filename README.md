@@ -31,6 +31,7 @@
 | 조직 기본 웹사이트 (Search Console과 동일) | `https://nyhoon.github.io/pocopet-site/` |
 | 개인정보처리방침 | `https://nyhoon.github.io/pocopet-site/legal/privacy-policy.html` |
 | 계정 삭제 | `https://nyhoon.github.io/pocopet-site/legal/account-deletion.html` |
+| AdMob `app-ads.txt` | `https://nyhoon.github.io/pocopet-site/app-ads.txt` |
 
 ## 내용 수정
 
